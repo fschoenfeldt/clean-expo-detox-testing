@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "detox": "^18.19.0",
-    "detox-expo-helpers": "^0.6.0",
+    "detox-expo-helpers": "file:packages/detox-expo-helpers",
     "expo": "~42.0.1",
     "expo-detox-hook": "^1.0.10",
     "expo-status-bar": "~1.0.4",

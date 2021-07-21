@@ -3530,10 +3530,8 @@ detect-newline@^3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
   integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
 
-detox-expo-helpers@^0.6.0:
+"detox-expo-helpers@file:packages/detox-expo-helpers":
   version "0.6.0"
-  resolved "https://registry.yarnpkg.com/detox-expo-helpers/-/detox-expo-helpers-0.6.0.tgz#01cc53727bbd516d162d8fcd37fce61983c54181"
-  integrity sha512-35M5PgIEgxcwvpXwQmbZ6xdOIP0ScKo9lNq+fSm2mk09JSEMyZXnN/RCyiU65+kem/YvODHOhWz0ebWXfG3Jag==
   dependencies:
     child-process-promise "^2.2.1"
     semver "^5.6.0"
