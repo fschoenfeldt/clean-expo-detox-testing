@@ -11,18 +11,14 @@ describe("Example", () => {
 
   it("should have welcome screen", async () => {
     await expect(element(by.id("fabian"))).toBeVisible();
-    const imagePath = await device.takeScreenshot("welcome screen");
+    await expect(element(by.id("mittag"))).toBeVisible();
+    await expect(element(by.label("Eins"))).toBeVisible();
+    await device.takeScreenshot("welcome screen before");
+    await element(by.id("click_button")).tap();
+    await expect(element(by.label("Zwei"))).toBeVisible();
+    await expect(element(by.label("Eins"))).toBeNotVisible();
+    await device.takeScreenshot("welcome screen after");
   });
-  /* 
-  it('should show hello screen after tap', async () => {
-    await element(by.id('hello_button')).tap();
-    await expect(element(by.text('Hello!!!'))).toBeVisible();
-  });
-
-  it('should show world screen after tap', async () => {
-    await element(by.id('world_button')).tap();
-    await expect(element(by.text('World!!!'))).toBeVisible();
-  }); */
 });
 
 function sleep(ms) {
