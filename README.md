@@ -20,6 +20,18 @@ describe("Example", () => {
   beforeEach(async () => {});
 ```
 
+- Alternatively, you could wait for the first element of your app (for example button on startscreen etc.), which is potentially faster:
+
+```js
+describe('Example', () => {
+  const welcomeMessage = element(by.id('welcome_message'));
+
+  beforeAll(async () => {
+    await reloadApp();
+    await waitFor(welcomeMessage).toBeVisible().withTimeout(10000);
+  });
+```
+
 ## References
 
 Note that this guide uses `jest-expo` which doesn't work (anymore)
