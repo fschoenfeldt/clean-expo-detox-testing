@@ -15,7 +15,6 @@
     "expo-detox-hook": "^1.0.10",
     "expo-status-bar": "~1.0.4",
     "jest": "^27.0.6",
-    "jest-expo": "^42.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
