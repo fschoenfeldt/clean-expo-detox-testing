@@ -1,4 +1,5 @@
 node_modules/
+artifacts
 bin
 .expo/
 npm-debug.*

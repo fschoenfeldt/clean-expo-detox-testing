@@ -11,6 +11,7 @@ describe("Example", () => {
 
   it("should have welcome screen", async () => {
     await expect(element(by.id("fabian"))).toBeVisible();
+    const imagePath = await device.takeScreenshot("welcome screen");
   });
   /* 
   it('should show hello screen after tap', async () => {
