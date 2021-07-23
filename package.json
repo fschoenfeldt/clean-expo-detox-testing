@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "detox": "^18.19.0",
-    "detox-expo-helpers": "github:fschoenfeldt/detox-expo-helpers#0.7.0",
+    "detox-expo-helpers": "github:fschoenfeldt/detox-expo-helpers#0.7.1",
     "expo": "~42.0.1",
     "expo-detox-hook": "^1.0.10",
     "expo-status-bar": "~1.0.4",
