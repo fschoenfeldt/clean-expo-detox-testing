@@ -7,6 +7,7 @@ Note the following:
 - `jest-expo` is **not** used with this project, because it seem to have issues with `jest-circus/runner`. That's why we're using vanilla `jest`
 - `detox-expo-helpers` is a [fork](https://github.com/fschoenfeldt/detox-expo-helpers) (see `package.json`)
 - Android is completely removed from the tests
+- The Expo SDK version of the binary you use must match that of the binary you download from their website.
 - The most important change is the `sleep`-function call in `firstTest.e2e.js`:
 
 ```js
