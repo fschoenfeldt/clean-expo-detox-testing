@@ -5,7 +5,7 @@
   "apps": {
     "ios": {
       "type": "ios.app",
-      "binaryPath": "bin/Exponent.app"
+      "binaryPath": "e2e/bin/Exponent.app"
     }
   },
   "devices": {
