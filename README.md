@@ -21,7 +21,7 @@ yarn downloadExpoApp
 
 - `jest-expo` is **not** used with this project, because it seem to have issues with `jest-circus/runner`. That's why we're using vanilla `jest`
 - `detox-expo-helpers` is a [fork](https://github.com/fschoenfeldt/detox-expo-helpers) (see `package.json`)
-- The Expo SDK version of the binary you use must match that of the binary you download from their website.
+- The Expo SDK version of the binary you use must match that of the binary you [download from their website](https://dpq5q02fu5f55.cloudfront.net/Exponent-2.24.0.tar.gz). (click download ipa, maybe you can swap out version number via url)
 - Android is completely removed from the tests as it's not really working right now
 - The most important change is the `sleep`-function call in `firstTest.e2e.js`:
 
