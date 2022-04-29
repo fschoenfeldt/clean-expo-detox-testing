@@ -3,8 +3,8 @@ const { reloadApp } = require("detox-expo-helpers");
 describe("Example", () => {
   beforeAll(async () => {
     await reloadApp();
-    // sleep so app can boot
-    await sleep(4000);
+    const welcomeMessage = element(by.id("welcome_message"));
+    await waitFor(welcomeMessage).toBeVisible().withTimeout(20000);
   });
 
   beforeEach(async () => {});

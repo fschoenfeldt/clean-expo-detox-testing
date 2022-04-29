@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest"
+    "downloadExpoApp": "e2e/misc/downloadExpoApp.sh",
+    "test": "detox test"
   },
   "dependencies": {
     "detox": "^18.19.0",

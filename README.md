@@ -2,12 +2,27 @@
 
 This example works with Expo 42 and Detox 18.
 
-Note the following:
+## Get it working
+
+1. Install dependencies: `yarn install`
+2. Download Expo App Binaries:
+
+```zsh
+# this will download and place `Exponent.app` under `e2e/bin/`.
+# if this doesn't work for you: - download them here: https://expo.dev/tools#client
+#                               - place them into e2e/bin/
+yarn downloadExpoApp
+```
+
+3. Start Metro Bundler & Simulator: `yarn ios`
+4. Run Test in seperate shell: `yarn test`
+
+## Notes
 
 - `jest-expo` is **not** used with this project, because it seem to have issues with `jest-circus/runner`. That's why we're using vanilla `jest`
 - `detox-expo-helpers` is a [fork](https://github.com/fschoenfeldt/detox-expo-helpers) (see `package.json`)
-- Android is completely removed from the tests
 - The Expo SDK version of the binary you use must match that of the binary you download from their website.
+- Android is completely removed from the tests as it's not really working right now
 - The most important change is the `sleep`-function call in `firstTest.e2e.js`:
 
 ```js
@@ -25,10 +40,9 @@ describe("Example", () => {
 
 ```js
 describe('Example', () => {
-  const welcomeMessage = element(by.id('welcome_message'));
-
   beforeAll(async () => {
     await reloadApp();
+    const welcomeMessage = element(by.id('welcome_message'));
     await waitFor(welcomeMessage).toBeVisible().withTimeout(10000);
   });
 ```
